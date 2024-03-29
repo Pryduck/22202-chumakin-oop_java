@@ -1,53 +1,43 @@
 package org.task1;
 import java.util.Scanner;
-import java.util.Random;
+
 
 public class Main {
 
-    public static int cowNumb;
-    public static int bullNumb;
-
-
     public static void main(String[] args) {
-        //генерация подходящего по условиям числа.......................................................................
-        Random random = new Random();
 
-        int riddle = 0;
-        String strRiddle;
-        char[] arrRiddle;
-        while (true) {
-            riddle = random.nextInt(9000) + 1000;
-            strRiddle = Integer.toString(riddle);
-            arrRiddle = strRiddle.toCharArray();
-            //проверка цифр числа
-            if (Check.different(arrRiddle) == 1) {
-                break;
-            }
-        }
-        //..............................................................................................................
+        char[] arrRiddle = new Generation().getArrRiddle();
+
         System.out.println("Enter a number: ");
         Scanner console = new Scanner(System.in);
+
+        int cowNumb = 0;
+        int bullNumb = 0;
 
         do {
             //ввод подходящего числа
             int numb;
-            String strNumb;
+            //String strNumb;
             char[] arrNumb;
 
             while (true) {
                 numb = console.nextInt();
-                strNumb = Integer.toString(numb);
-                arrNumb = strNumb.toCharArray();
-                if (Check.sizeCheck(numb) == 1) {
-                    if (Check.different(arrNumb) == 1) {
+                Check check = new Check(numb);
+
+                if (check.sizeCheck()) {
+                    if (check.different()) {
+                        arrNumb = check.getStr();
                         break;
                     } else {
                         System.out.println("your number has the same digits, try again: ");
                     }
                 }
+                else {
+                    System.out.println("your number is out of range, try again: ");
+                }
             }
 
-            BullsAndCowsContainer container = Compare.counting(arrNumb, arrRiddle);
+            BullsAndCowsContainer container = (new Compare()).counting(arrNumb, arrRiddle);
 
             cowNumb = container.getCows();
             bullNumb = container.getBulls();

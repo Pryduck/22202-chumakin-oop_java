@@ -10,12 +10,12 @@ public class CheckTest {
     @Test
     public void sizeCheck() {
         //Check check = new Check();
-        int actual = Check.sizeCheck(2222);
-        int expected = 1;
+        boolean actual = new Check(2222).sizeCheck();
+        boolean expected = true;
         assertEquals(expected, actual);
 
-        actual = Check.sizeCheck(900);
-        expected = 0;
+        actual = new Check(900).sizeCheck();
+        expected = false;
         assertEquals(expected, actual);
 
     }
@@ -23,12 +23,12 @@ public class CheckTest {
     @Test
     public void different() {
         //Check check = new Check();
-        int actual = Check.different(new char[]{1,2,3,4});
-        int expected = 1;
+        boolean actual = new Check(1234).different();
+        boolean expected = true;
         assertEquals(expected, actual);
 
-        actual = Check.different(new char[]{1,1,1,1});
-        expected = 0;
+        actual = new Check(1111).different();
+        expected = false;
         assertEquals(expected, actual);
 
     }

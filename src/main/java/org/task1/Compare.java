@@ -2,7 +2,7 @@ package org.task1;
 
 public class Compare {
     //функция сравнения двух чисел
-    public static BullsAndCowsContainer counting(char[] c1, char[] c2) {
+    public BullsAndCowsContainer counting(char[] c1, char[] c2) {
         int bullNumb = 0;
         int cowNumb = 0;
         for (int i = 0; i < c1.length; i++) {

@@ -20,6 +20,11 @@ public class CompareTest {
         expected = new BullsAndCowsContainer(2,1);
         assertEquals(expected.getBulls(), actual.getBulls());
         assertEquals(expected.getCows(), actual.getCows());
+
+        actual = compare.counting(new char[]{1,2,3,4}, new char[]{1,2,3,4});
+        expected = new BullsAndCowsContainer(4,0);
+        assertEquals(expected.getBulls(), actual.getBulls());
+        assertEquals(expected.getCows(), actual.getCows());
     }
 
 }
