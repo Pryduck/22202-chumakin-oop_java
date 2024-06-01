@@ -1,0 +1,13 @@
+#test 4
+#testing DEFINE operation
+
+DEFINE a 10
+PUSH a
+
+DEFINE b 20
+PUSH b
+
+DEFINE c b
+PUSH c
+
+DEFINE d abracadabra
