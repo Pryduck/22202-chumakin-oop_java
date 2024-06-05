@@ -12,7 +12,11 @@ public class OperSqrt extends DefaultStackOperation {
     }
 
     @Override
-    public void operate(CalcContext context, List<String> tokens) {
+    public void operate(CalcContext context, List<String> tokens) throws StackCalcNegativeSqrtException {
+        float a = context.getStack().pop();
+        if (a < 0) {
+            throw new StackCalcNegativeSqrtException("Negative number in sqrt");
+        }
         context.getStack().push((float)Math.sqrt(context.getStack().pop()));
     }
 }
