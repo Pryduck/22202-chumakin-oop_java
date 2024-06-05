@@ -1,0 +1,15 @@
+DEFINE daniktron.calculator.operations.OperDefine
+POP daniktron.calculator.operations.OperPop
+PUSH daniktron.calculator.operations.OperPush
+SQRT daniktron.calculator.operations.OperSqrt
+PRINT daniktron.calculator.operations.OperPrint
+
+- daniktron.calculator.operations.OperMinus
++ daniktron.calculator.operations.OperPlus
+/ daniktron.calculator.operations.OperDivide
+* daniktron.calculator.operations.OperMultiply
+
+MINUS daniktron.calculator.operations.OperMinus
+PLUS daniktron.calculator.operations.OperPlus
+DIVISION daniktron.calculator.operations.OperDivide
+MULTIPLY daniktron.calculator.operations.OperMultiply
