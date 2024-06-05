@@ -6,7 +6,7 @@ import daniktron.calculator.exceptions.StackCalcTooShortStackSizeException;
 import daniktron.calculator.exceptions.StackCalcWrongArgsNumberException;
 
 import java.util.List;
-//реализация шаблона стековой операции
+//реализация шаблона стековой операции - operation
 public abstract class DefaultStackOperation implements StackOperation {
 
     final int correctTokensCount, minStackSize;

@@ -2,7 +2,7 @@ package daniktron.calculator;
 
 import java.util.Map;
 import java.util.Stack;
-//хранит то с чем будем работать
+//то с чем будем работать
 public class CalcContext {
     private Map<String, Float> dictionary;
     private Stack<Float> stack;

@@ -10,10 +10,13 @@ import java.io.FileReader;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
+
 //принимает файл, хранит словарь, связывающий строковое представление операции с объектом, который её реализует
 public class DefaultFactory implements Factory {
+
     final private String fileName;
     final private Map<String, StackOperation> operationDict;
+
     public DefaultFactory(String name) throws StackCalcConfigException {
         this.fileName = name;
         this.operationDict = new HashMap<>();
@@ -25,6 +28,7 @@ public class DefaultFactory implements Factory {
                     String[] tokens = line.split(" ");
                     operationDict.put(
                         tokens[0],
+                        //для получения пары из строки и операции, соотв-й этой строки
                         Class.forName(tokens[1]).asSubclass(StackOperation.class).newInstance());
                 }
             }
@@ -35,6 +39,7 @@ public class DefaultFactory implements Factory {
             throw new StackCalcConfigException("Error while reading config!", e);
         }
     }
+
     public DefaultFactory() throws StackCalcConfigException { this("config.txt"); }
 
     //реализация интерфейса
