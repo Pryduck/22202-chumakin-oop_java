@@ -1,0 +1,7 @@
+#test 2
+#testing POP operation on an empty stack
+
+PUSH 1
+
+POP
+POP

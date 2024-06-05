@@ -1,0 +1,15 @@
+#test 5
+#testing SQRT
+
+PUSH 1
+SQRT
+POP
+
+PUSH 4
+SQRT
+POP
+
+DEFINE value 9
+PUSH value
+SQRT
+POP
