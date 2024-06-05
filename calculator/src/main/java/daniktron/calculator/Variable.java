@@ -7,9 +7,9 @@ import java.util.Map;
 //токен -> число, getVal  все операции с токенами
 public class Variable {
     private final String val;
-    //предопределяет во время вызова конструктора - подана ли на вход строка или число
+    
     private final boolean isConst;
-    //вызывается, когда нужно получить численное значение переменной
+    
     public float getVal(final Map<String, Float> dictionary) throws StackCalcVariableNotDefinedException, StackCalcConstParseException {
         if (isConst) {//строковое представление в реальное число
             return parse(val);
