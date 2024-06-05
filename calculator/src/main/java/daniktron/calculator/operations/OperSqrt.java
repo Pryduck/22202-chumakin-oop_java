@@ -2,6 +2,8 @@ package daniktron.calculator.operations;
 
 import daniktron.calculator.CalcContext;
 import daniktron.calculator.DefaultStackOperation;
+import daniktron.calculator.exceptions.StackCalcNegativeSqrtException;
+
 
 import java.util.List;
 
