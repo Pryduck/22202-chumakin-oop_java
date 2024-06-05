@@ -7,14 +7,12 @@ import daniktron.calculator.factory.Factory;
 import java.util.*;
 
 public class Calculator {
-    //фактори переведёт строку в операцию
+
     private Factory factory;
     private CalcContext context = new CalcContext(new Stack<>(), new HashMap<>());
     private Scanner stream;
     private boolean hasNext = true;
 
-
-    public boolean hasNext() { return this.hasNext; }
     public final CalcContext getContext() { return this.context; }
 
     public Calculator(Scanner stream) throws StackCalcConfigException { this(stream, new DefaultFactory()); }
@@ -22,10 +20,6 @@ public class Calculator {
     public Calculator(Scanner stream, Factory factory) throws StackCalcConfigException {
         this.stream = stream;
         this.factory = factory;
-    }
-
-    public Calculator(Scanner stream, String fileName) throws StackCalcConfigException {
-        this(stream, new DefaultFactory(fileName));
     }
 
     public void work() throws StackCalcException {
