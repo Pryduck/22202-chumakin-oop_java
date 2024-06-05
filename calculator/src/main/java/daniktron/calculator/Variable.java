@@ -14,7 +14,7 @@ public class Variable {
         if (isConst) {//строковое представление в реальное число
             return parse(val);
         }
-        /*объект-обёртка над float*/Float f = dictionary.get(val);
+        Float f = dictionary.get(val);
         if (f == null) {
             throw new StackCalcVariableNotDefinedException("Variable " + val + "is not defined!");
         }
