@@ -34,7 +34,7 @@ public class Variable {
     //проверка - число ли это (в конструкторе например её вызываем)
     public static boolean isConst(final String val) {
         char c = val.charAt(0); //получить символ с индексом ноль (как массив [0]
-        return ('0' <= c) && (c <= '9');
+        return ('0' <= c) && (c <= '9') || (c == '-');
     }
 
     public static float parse(final String val) throws StackCalcConstParseException {
