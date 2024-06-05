@@ -51,7 +51,8 @@ public class Calculator {
             }
             //первый арг-т передаётся на factory и он возвр-ет операцию
             StackOperation s = factory.getOperation(tokens[0]);
-            s.operation(context, List.of(tokens));
+            s.operation(context, Arrays.asList(tokens)/*List.of(tokens)*/);
+            //s.operation(context, List.of(tokens));
 
             hasNext = stream.hasNext();
 
