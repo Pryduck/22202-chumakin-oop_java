@@ -8,6 +8,7 @@ import daniktron.calculator.exceptions.StackCalcTooShortStackSizeException;
 import daniktron.calculator.exceptions.StackCalcVariableNotDefinedException;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
+import org.slf4j.LoggerFactory;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -47,99 +48,6 @@ public class CalculatorTest {
         }
     }
 
-
-    /*private static final TestDescriptor[] tests = {
-            new TestDescriptor(
-
-                    "#test 1"+
-                            "#testing PRINT, POP and PUSH operations"+
-
-                            "PUSH 1"+
-                            "PRINT"+
-                            "PUSH 2"+
-                            "PRINT"+
-
-                            "POP"+
-                            "PRINT",
-                    "1.0\n2.0\n1.0\n"
-
-            ),
-            new TestDescriptor(
-
-                    "#test 2"+
-                            "#testing POP on empty stack"+
-
-                            "PUSH 1"+
-                            "PUSH 2"+
-
-                            "POP"+
-                            "POP",
-                    "",
-                    StackCalcTooShortStackSizeException.class
-            ),
-            new TestDescriptor(
-
-                    "#test 3"+
-                            "#testing how \"+\" and \"-\" operations"+
-
-                            "PUSH 10"+
-                            "PUSH 40"+
-                            "+"+
-                            "PRINT"+
-                            "#answer: 50"+
-
-
-                            "PUSH 10"+
-                            "PUSH 40"+
-                            "-"+
-                            "PRINT"+
-                            "#answer: 30",
-                    "50.0\n30.0\n"
-            ),
-            new TestDescriptor(
-
-                    "#test 4"+
-                            "#testing DEFINE operation"+
-
-                            "DEFINE a 10"+
-                            "PUSH a"+
-                            "PRINT"+
-
-                            "DEFINE b 20"+
-                            "PUSH b"+
-                            "PRINT"+
-
-                            "DEFINE c b"+
-                            "PUSH c"+
-                            "PRINT"+
-
-                            "DEFINE d abracadabra"+
-                            "PUSH d"+
-                            "PRINT",
-                    "10.0\n20.0\n20.0\n",
-                    StackCalcVariableNotDefinedException.class
-            ),
-            new TestDescriptor(
-
-                    "#test 5"+
-                            "#testing SQRT"+
-
-                            "PUSH 1"+
-                            "SQRT"+
-                            "PRINT"+
-
-                            "PUSH 4"+
-                            "SQRT"+
-                            "PRINT"+
-
-                            "DEFINE value 9"+
-                            "PUSH value"+
-                            "SQRT"+
-                            "PRINT",
-                    "1.0\n2.0\n3.0\n"
-            ),
-    };
-*/
     private static final TestDescriptor[] tests = {
             new TestDescriptor(
 
@@ -235,10 +143,13 @@ public class CalculatorTest {
     @Test
     public void testPopAndPushOperations() {
 
+        //переопр-ем стандартный поток вывода
+        ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+        System.setOut(new PrintStream(outputStream));
+
         for (final TestDescriptor test : tests) {
-            //переопр-ем стандартный поток вывода
-            ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
-            System.setOut(new PrintStream(outputStream));
+
+            outputStream.reset();
 
             boolean exceptionThrowed = false;
 
@@ -257,6 +168,7 @@ public class CalculatorTest {
                     Assert.assertEquals(test.getException(), e.getClass());
                 }
             }
+
             //сравнили выводы
             Assert.assertEquals(test.getAnswer(), outputStream.toString().replaceAll("\r\n", "\n"));
 
