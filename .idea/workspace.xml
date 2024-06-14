@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6df7b5bd-c515-4445-b4b2-a5f010dfa1d7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/danich/factory/ConfigReader/ConfigReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/danich/factory/ControllerWarehouseFinCars/CarAssembly.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/danich/factory/ControllerWarehouseFinCars/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/danich/factory/ControllerWarehouseFinCars/TasksDistribution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/danich/factory/Dealer/Dealer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/danich/factory/Factory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/danich/factory/ID/IDAssignor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/danich/factory/Settings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/danich/factory/SingletonLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/danich/factory/Subjects/Accessory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/danich/factory/Subjects/Body.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/danich/factory/Subjects/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/danich/factory/Subjects/Motor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/danich/factory/Subjects/Subject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/danich/factory/Suppliers/AccessoriesSupplier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/danich/factory/Suppliers/BodiesSupplier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/danich/factory/Suppliers/MotorsSupplier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/danich/factory/Suppliers/Supplier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/danich/factory/Warehouses/AccessoriesWarehouse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/danich/factory/Warehouses/BodiesWarehouse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/danich/factory/Warehouses/CarsWarehouse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/danich/factory/Warehouses/MotorsWarehouse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/danich/factory/Warehouses/Warehouse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/danich/factory/Warehouses/WarehousesMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/danich/factory/service/Observable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/danich/factory/service/Observer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/danich/threadpool/BlockingQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/danich/threadpool/ThreadPool.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/danich/threadpool/Worker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/danich/view/FactoryPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/danich/view/SliderWithLabel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/danich/view/events/AccessoriesSupplierEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/danich/view/events/BodySupplierEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/danich/view/events/DealerEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/danich/view/events/Event.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/danich/view/events/MotorSupplierEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/danich/view/listeners/AccessoriesSliderListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/danich/view/listeners/BodySliderListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/danich/view/listeners/DealerSliderListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/danich/view/listeners/MotorSliderListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/config.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="2hpblzAO4kVK9En8ye75sAut1OF" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.Factory.executor": "Run",
+    "Application.danich.factory.Factory.executor": "Run",
+    "Maven.task-4 [-v].executor": "Run",
+    "Maven.task-4 [clean,install,-U].executor": "Run",
+    "Maven.task-4 [clean,install].executor": "Run",
+    "Maven.task-4 [dependency:tree].executor": "Run",
+    "Maven.task-4 [package,--source,8].executor": "Run",
+    "Maven.task-4 [package,-source,8].executor": "Run",
+    "Maven.task-4 [package].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Danich/IdeaProjects/task4/src/main/resources",
+    "onboarding.tips.debug.path": "C:/Users/Danich/IdeaProjects/task4/src/main/java/org/example/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Danich\IdeaProjects\task4\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn -v" />
+      <command value="mvn clean install -U" />
+      <command value="mvn clean install" />
+      <command value="mvn package -source 8" />
+      <command value="mvn package --source 8" />
+      <command value="mvn package" />
+      <command value="mvn dependency:tree" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.danich.factory.Factory">
+    <configuration name="Factory" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="factory.Factory" />
+      <module name="task4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="factory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="danich.factory.Factory" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="corretto-1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="danich.factory.Factory" />
+      <module name="task4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="danich.factory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.danich.factory.Factory" />
+      <item itemvalue="Application.Factory" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.danich.factory.Factory" />
+        <item itemvalue="Application.Factory" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6df7b5bd-c515-4445-b4b2-a5f010dfa1d7" name="Changes" comment="" />
+      <created>1718294128809</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1718294128809</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
